@@ -52,7 +52,6 @@
             "aliases": {
                 "Admin": "Core\\Admin\\Facades\\Admin"
             }
-
         }
     }
 }
