@@ -1,43 +1,13 @@
-laravel-admin
+Laravel admin
 =====
 
-[![Build Status](https://travis-ci.org/z-song/laravel-admin.svg?branch=master)](https://travis-ci.org/z-song/laravel-admin)
-[![StyleCI](https://styleci.io/repos/48796179/shield)](https://styleci.io/repos/48796179)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/z-song/laravel-admin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/z-song/laravel-admin/?branch=master)
-[![Packagist](https://img.shields.io/packagist/l/encore/laravel-admin.svg?maxAge=2592000)](https://packagist.org/packages/encore/laravel-admin)
-[![Total Downloads](https://img.shields.io/packagist/dt/encore/laravel-admin.svg?style=flat-square)](https://packagist.org/packages/encore/laravel-admin)
 
-`laravel-admin` is administrative interface builder for laravel which can help you build CRUD backends just with few lines of code.
-
-[Demo](http://120.26.143.106/admin) use `username/password:admin/admin`
-
-Inspired by [SleepingOwlAdmin](https://github.com/sleeping-owl/admin) and [rapyd-laravel](https://github.com/zofe/rapyd-laravel).
-
-[中文文档](/docs/zh/README.md)
-
-Screenshots
-------------
-
-![laravel-admin](https://cloud.githubusercontent.com/assets/1479100/19625297/3b3deb64-9947-11e6-807c-cffa999004be.jpg)
-
-Installation
-------------
-
-```
-Laravel 5.2
-composer require encore/laravel-admin "dev-master"
-
-Laravel 5.3
-composer require encore/laravel-admin "1.3.x-dev"
-
-Laravel 5.1
-composer require encore/laravel-admin "1.1.x-dev"
 ```
 
 In`config/app.php`add`ServiceProvider`:
 
 ```
-Encore\Admin\AdminServiceProvider::class
+Core\Admin\AdminServiceProvider::class
 ```
 
 Then run these commands to finnish install：
@@ -82,7 +52,7 @@ app/Admin
 └── routes.php
 ```
 
-`app/Admin/routes.php` is used to define routes，for more detail please read [routes](/docs/zh/router.md).
+`app/Admin/routes.php` is used to define routes，for more detail please read [routes].
 
 The `app/Admin/Controllers` directory  is used to store all the controllers, The `HomeController.php` file under this directory is used to handle home request of admin,The `ExampleController.php` file is a controller example.
 

@@ -1,9 +1,9 @@
 # Infobox
 
-The `Encore\Admin\Widgets\InfoBox` class is used to generate the information presentation block:
+The `Core\Admin\Widgets\InfoBox` class is used to generate the information presentation block:
 
 ```php
-use Encore\Admin\Widgets\InfoBox;
+use Core\Admin\Widgets\InfoBox;
 
 $infoBox = new InfoBox('New Users', 'users', 'aqua', '/admin/users', '1024');
 

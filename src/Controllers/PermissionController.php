@@ -1,12 +1,12 @@
 <?php
 
-namespace Encore\Admin\Controllers;
+namespace Core\Admin\Controllers;
 
-use Encore\Admin\Auth\Database\Permission;
-use Encore\Admin\Facades\Admin;
-use Encore\Admin\Form;
-use Encore\Admin\Grid;
-use Encore\Admin\Layout\Content;
+use Core\Admin\Auth\Database\Permission;
+use Core\Admin\Facades\Admin;
+use Core\Admin\Form;
+use Core\Admin\Grid;
+use Core\Admin\Layout\Content;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Str;
 

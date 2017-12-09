@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter\Presenter;
+namespace Core\Admin\Grid\Filter\Presenter;
 
-use Encore\Admin\Facades\Admin;
+use Core\Admin\Facades\Admin;
 use Illuminate\Contracts\Support\Arrayable;
 
 class Select extends Presenter

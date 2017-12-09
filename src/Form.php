@@ -1,14 +1,14 @@
 <?php
 
-namespace Encore\Admin;
+namespace Core\Admin;
 
 use Closure;
-use Encore\Admin\Exception\Handler;
-use Encore\Admin\Form\Builder;
-use Encore\Admin\Form\Field;
-use Encore\Admin\Form\Field\File;
-use Encore\Admin\Form\Row;
-use Encore\Admin\Form\Tab;
+use Core\Admin\Exception\Handler;
+use Core\Admin\Form\Builder;
+use Core\Admin\Form\Field;
+use Core\Admin\Form\Field\File;
+use Core\Admin\Form\Row;
+use Core\Admin\Form\Tab;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Http\Request;
@@ -1198,52 +1198,52 @@ class Form
     public static function registerBuiltinFields()
     {
         $map = [
-            'button'         => \Encore\Admin\Form\Field\Button::class,
-            'checkbox'       => \Encore\Admin\Form\Field\Checkbox::class,
-            'color'          => \Encore\Admin\Form\Field\Color::class,
-            'currency'       => \Encore\Admin\Form\Field\Currency::class,
-            'date'           => \Encore\Admin\Form\Field\Date::class,
-            'dateRange'      => \Encore\Admin\Form\Field\DateRange::class,
-            'datetime'       => \Encore\Admin\Form\Field\Datetime::class,
-            'dateTimeRange'  => \Encore\Admin\Form\Field\DatetimeRange::class,
-            'datetimeRange'  => \Encore\Admin\Form\Field\DatetimeRange::class,
-            'decimal'        => \Encore\Admin\Form\Field\Decimal::class,
-            'display'        => \Encore\Admin\Form\Field\Display::class,
-            'divider'        => \Encore\Admin\Form\Field\Divide::class,
-            'divide'         => \Encore\Admin\Form\Field\Divide::class,
-            'embeds'         => \Encore\Admin\Form\Field\Embeds::class,
-            'editor'         => \Encore\Admin\Form\Field\Editor::class,
-            'email'          => \Encore\Admin\Form\Field\Email::class,
-            'file'           => \Encore\Admin\Form\Field\File::class,
-            'hasMany'        => \Encore\Admin\Form\Field\HasMany::class,
-            'hidden'         => \Encore\Admin\Form\Field\Hidden::class,
-            'id'             => \Encore\Admin\Form\Field\Id::class,
-            'image'          => \Encore\Admin\Form\Field\Image::class,
-            'ip'             => \Encore\Admin\Form\Field\Ip::class,
-            'map'            => \Encore\Admin\Form\Field\Map::class,
-            'mobile'         => \Encore\Admin\Form\Field\Mobile::class,
-            'month'          => \Encore\Admin\Form\Field\Month::class,
-            'multipleSelect' => \Encore\Admin\Form\Field\MultipleSelect::class,
-            'number'         => \Encore\Admin\Form\Field\Number::class,
-            'password'       => \Encore\Admin\Form\Field\Password::class,
-            'radio'          => \Encore\Admin\Form\Field\Radio::class,
-            'rate'           => \Encore\Admin\Form\Field\Rate::class,
-            'select'         => \Encore\Admin\Form\Field\Select::class,
-            'slider'         => \Encore\Admin\Form\Field\Slider::class,
-            'switch'         => \Encore\Admin\Form\Field\SwitchField::class,
-            'text'           => \Encore\Admin\Form\Field\Text::class,
-            'textarea'       => \Encore\Admin\Form\Field\Textarea::class,
-            'time'           => \Encore\Admin\Form\Field\Time::class,
-            'timeRange'      => \Encore\Admin\Form\Field\TimeRange::class,
-            'url'            => \Encore\Admin\Form\Field\Url::class,
-            'year'           => \Encore\Admin\Form\Field\Year::class,
-            'html'           => \Encore\Admin\Form\Field\Html::class,
-            'tags'           => \Encore\Admin\Form\Field\Tags::class,
-            'icon'           => \Encore\Admin\Form\Field\Icon::class,
-            'multipleFile'   => \Encore\Admin\Form\Field\MultipleFile::class,
-            'multipleImage'  => \Encore\Admin\Form\Field\MultipleImage::class,
-            'captcha'        => \Encore\Admin\Form\Field\Captcha::class,
-            'listbox'        => \Encore\Admin\Form\Field\Listbox::class,
+            'button'         => \Core\Admin\Form\Field\Button::class,
+            'checkbox'       => \Core\Admin\Form\Field\Checkbox::class,
+            'color'          => \Core\Admin\Form\Field\Color::class,
+            'currency'       => \Core\Admin\Form\Field\Currency::class,
+            'date'           => \Core\Admin\Form\Field\Date::class,
+            'dateRange'      => \Core\Admin\Form\Field\DateRange::class,
+            'datetime'       => \Core\Admin\Form\Field\Datetime::class,
+            'dateTimeRange'  => \Core\Admin\Form\Field\DatetimeRange::class,
+            'datetimeRange'  => \Core\Admin\Form\Field\DatetimeRange::class,
+            'decimal'        => \Core\Admin\Form\Field\Decimal::class,
+            'display'        => \Core\Admin\Form\Field\Display::class,
+            'divider'        => \Core\Admin\Form\Field\Divide::class,
+            'divide'         => \Core\Admin\Form\Field\Divide::class,
+            'embeds'         => \Core\Admin\Form\Field\Embeds::class,
+            'editor'         => \Core\Admin\Form\Field\Editor::class,
+            'email'          => \Core\Admin\Form\Field\Email::class,
+            'file'           => \Core\Admin\Form\Field\File::class,
+            'hasMany'        => \Core\Admin\Form\Field\HasMany::class,
+            'hidden'         => \Core\Admin\Form\Field\Hidden::class,
+            'id'             => \Core\Admin\Form\Field\Id::class,
+            'image'          => \Core\Admin\Form\Field\Image::class,
+            'ip'             => \Core\Admin\Form\Field\Ip::class,
+            'map'            => \Core\Admin\Form\Field\Map::class,
+            'mobile'         => \Core\Admin\Form\Field\Mobile::class,
+            'month'          => \Core\Admin\Form\Field\Month::class,
+            'multipleSelect' => \Core\Admin\Form\Field\MultipleSelect::class,
+            'number'         => \Core\Admin\Form\Field\Number::class,
+            'password'       => \Core\Admin\Form\Field\Password::class,
+            'radio'          => \Core\Admin\Form\Field\Radio::class,
+            'rate'           => \Core\Admin\Form\Field\Rate::class,
+            'select'         => \Core\Admin\Form\Field\Select::class,
+            'slider'         => \Core\Admin\Form\Field\Slider::class,
+            'switch'         => \Core\Admin\Form\Field\SwitchField::class,
+            'text'           => \Core\Admin\Form\Field\Text::class,
+            'textarea'       => \Core\Admin\Form\Field\Textarea::class,
+            'time'           => \Core\Admin\Form\Field\Time::class,
+            'timeRange'      => \Core\Admin\Form\Field\TimeRange::class,
+            'url'            => \Core\Admin\Form\Field\Url::class,
+            'year'           => \Core\Admin\Form\Field\Year::class,
+            'html'           => \Core\Admin\Form\Field\Html::class,
+            'tags'           => \Core\Admin\Form\Field\Tags::class,
+            'icon'           => \Core\Admin\Form\Field\Icon::class,
+            'multipleFile'   => \Core\Admin\Form\Field\MultipleFile::class,
+            'multipleImage'  => \Core\Admin\Form\Field\MultipleImage::class,
+            'captcha'        => \Core\Admin\Form\Field\Captcha::class,
+            'listbox'        => \Core\Admin\Form\Field\Listbox::class,
         ];
 
         foreach ($map as $abstract => $class) {

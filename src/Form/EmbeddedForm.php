@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Form;
+namespace Core\Admin\Form;
 
-use Encore\Admin\Form;
+use Core\Admin\Form;
 use Illuminate\Support\Collection;
 
 /**

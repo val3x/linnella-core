@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin;
+namespace Core\Admin;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -10,11 +10,11 @@ class AdminServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        'Encore\Admin\Console\MakeCommand',
-        'Encore\Admin\Console\MenuCommand',
-        'Encore\Admin\Console\InstallCommand',
-        'Encore\Admin\Console\UninstallCommand',
-        'Encore\Admin\Console\ImportCommand',
+        'Core\Admin\Console\MakeCommand',
+        'Core\Admin\Console\MenuCommand',
+        'Core\Admin\Console\InstallCommand',
+        'Core\Admin\Console\UninstallCommand',
+        'Core\Admin\Console\ImportCommand',
     ];
 
     /**
@@ -23,11 +23,11 @@ class AdminServiceProvider extends ServiceProvider
      * @var array
      */
     protected $routeMiddleware = [
-        'admin.auth'       => \Encore\Admin\Middleware\Authenticate::class,
-        'admin.pjax'       => \Encore\Admin\Middleware\Pjax::class,
-        'admin.log'        => \Encore\Admin\Middleware\LogOperation::class,
-        'admin.permission' => \Encore\Admin\Middleware\Permission::class,
-        'admin.bootstrap'  => \Encore\Admin\Middleware\Bootstrap::class,
+        'admin.auth'       => \Core\Admin\Middleware\Authenticate::class,
+        'admin.pjax'       => \Core\Admin\Middleware\Pjax::class,
+        'admin.log'        => \Core\Admin\Middleware\LogOperation::class,
+        'admin.permission' => \Core\Admin\Middleware\Permission::class,
+        'admin.bootstrap'  => \Core\Admin\Middleware\Bootstrap::class,
     ];
 
     /**

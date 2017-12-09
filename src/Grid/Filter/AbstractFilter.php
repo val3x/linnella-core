@@ -1,15 +1,15 @@
 <?php
 
-namespace Encore\Admin\Grid\Filter;
+namespace Core\Admin\Grid\Filter;
 
-use Encore\Admin\Grid\Filter;
-use Encore\Admin\Grid\Filter\Presenter\Checkbox;
-use Encore\Admin\Grid\Filter\Presenter\DateTime;
-use Encore\Admin\Grid\Filter\Presenter\MultipleSelect;
-use Encore\Admin\Grid\Filter\Presenter\Presenter;
-use Encore\Admin\Grid\Filter\Presenter\Radio;
-use Encore\Admin\Grid\Filter\Presenter\Select;
-use Encore\Admin\Grid\Filter\Presenter\Text;
+use Core\Admin\Grid\Filter;
+use Core\Admin\Grid\Filter\Presenter\Checkbox;
+use Core\Admin\Grid\Filter\Presenter\DateTime;
+use Core\Admin\Grid\Filter\Presenter\MultipleSelect;
+use Core\Admin\Grid\Filter\Presenter\Presenter;
+use Core\Admin\Grid\Filter\Presenter\Radio;
+use Core\Admin\Grid\Filter\Presenter\Select;
+use Core\Admin\Grid\Filter\Presenter\Text;
 
 /**
  * Class AbstractFilter.

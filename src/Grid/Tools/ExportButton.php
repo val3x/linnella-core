@@ -1,9 +1,9 @@
 <?php
 
-namespace Encore\Admin\Grid\Tools;
+namespace Core\Admin\Grid\Tools;
 
-use Encore\Admin\Admin;
-use Encore\Admin\Grid;
+use Core\Admin\Admin;
+use Core\Admin\Grid;
 
 class ExportButton extends AbstractTool
 {

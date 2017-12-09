@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Middleware;
+namespace Core\Admin\Middleware;
 
-use Encore\Admin\Facades\Admin;
+use Core\Admin\Facades\Admin;
 use Illuminate\Http\Request;
 
 class Permission
@@ -24,7 +24,7 @@ class Permission
         if (!Admin::user()->allPermissions()->first(function ($permission) use ($request) {
             return $permission->shouldPassThrough($request);
         })) {
-            \Encore\Admin\Auth\Permission::error();
+            \Core\Admin\Auth\Permission::error();
         }
 
         return $next($request);

@@ -5,17 +5,17 @@ return [
     /*
      * Admin name.
      */
-    'name' => 'Laravel-admin',
+    'name' => 'Admin Panel',
 
     /*
      * Logo in admin panel header.
      */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<b>Admin</b> panel',
 
     /*
      * Mini-logo in admin panel header.
      */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>Ap</b>',
 
     /*
      * Route configuration.
@@ -30,12 +30,12 @@ return [
     ],
 
     /*
-     * Laravel-admin install directory.
+     * Laravel admin install directory.
      */
     'directory' => app_path('Admin'),
 
     /*
-     * Laravel-admin html title.
+     * Laravel admin html title.
      */
     'title' => 'Admin',
 
@@ -45,7 +45,7 @@ return [
     'secure' => false,
 
     /*
-     * Laravel-admin auth setting.
+     * Laravel admin auth setting.
      */
     'auth' => [
         'guards' => [
@@ -58,13 +58,13 @@ return [
         'providers' => [
             'admin' => [
                 'driver' => 'eloquent',
-                'model'  => Encore\Admin\Auth\Database\Administrator::class,
+                'model'  => Core\Admin\Auth\Database\Administrator::class,
             ],
         ],
     ],
 
     /*
-     * Laravel-admin upload setting.
+     * Laravel admin upload setting.
      */
     'upload' => [
 
@@ -77,7 +77,7 @@ return [
     ],
 
     /*
-     * Laravel-admin database setting.
+     * Laravel admin database setting.
      */
     'database' => [
 
@@ -86,19 +86,19 @@ return [
 
         // User tables and model.
         'users_table' => 'admin_users',
-        'users_model' => Encore\Admin\Auth\Database\Administrator::class,
+        'users_model' => Core\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'admin_roles',
-        'roles_model' => Encore\Admin\Auth\Database\Role::class,
+        'roles_model' => Core\Admin\Auth\Database\Role::class,
 
         // Permission table and model.
         'permissions_table' => 'admin_permissions',
-        'permissions_model' => Encore\Admin\Auth\Database\Permission::class,
+        'permissions_model' => Core\Admin\Auth\Database\Permission::class,
 
         // Menu table and model.
         'menu_table' => 'admin_menu',
-        'menu_model' => Encore\Admin\Auth\Database\Menu::class,
+        'menu_model' => Core\Admin\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'admin_operation_log',

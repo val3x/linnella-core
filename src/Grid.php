@@ -1,17 +1,17 @@
 <?php
 
-namespace Encore\Admin;
+namespace Core\Admin;
 
 use Closure;
-use Encore\Admin\Exception\Handler;
-use Encore\Admin\Grid\Column;
-use Encore\Admin\Grid\Displayers\Actions;
-use Encore\Admin\Grid\Displayers\RowSelector;
-use Encore\Admin\Grid\Exporter;
-use Encore\Admin\Grid\Filter;
-use Encore\Admin\Grid\Model;
-use Encore\Admin\Grid\Row;
-use Encore\Admin\Grid\Tools;
+use Core\Admin\Exception\Handler;
+use Core\Admin\Grid\Column;
+use Core\Admin\Grid\Displayers\Actions;
+use Core\Admin\Grid\Displayers\RowSelector;
+use Core\Admin\Grid\Exporter;
+use Core\Admin\Grid\Filter;
+use Core\Admin\Grid\Model;
+use Core\Admin\Grid\Row;
+use Core\Admin\Grid\Tools;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -29,7 +29,7 @@ class Grid
     /**
      * The grid data model instance.
      *
-     * @var \Encore\Admin\Grid\Model
+     * @var \Core\Admin\Grid\Model
      */
     protected $model;
 
@@ -92,7 +92,7 @@ class Grid
     /**
      * The grid Filter.
      *
-     * @var \Encore\Admin\Grid\Filter
+     * @var \Core\Admin\Grid\Filter
      */
     protected $filter;
 
@@ -895,19 +895,19 @@ class Grid
     public static function registerColumnDisplayer()
     {
         $map = [
-            'editable'    => \Encore\Admin\Grid\Displayers\Editable::class,
-            'switch'      => \Encore\Admin\Grid\Displayers\SwitchDisplay::class,
-            'switchGroup' => \Encore\Admin\Grid\Displayers\SwitchGroup::class,
-            'select'      => \Encore\Admin\Grid\Displayers\Select::class,
-            'image'       => \Encore\Admin\Grid\Displayers\Image::class,
-            'label'       => \Encore\Admin\Grid\Displayers\Label::class,
-            'button'      => \Encore\Admin\Grid\Displayers\Button::class,
-            'link'        => \Encore\Admin\Grid\Displayers\Link::class,
-            'badge'       => \Encore\Admin\Grid\Displayers\Badge::class,
-            'progressBar' => \Encore\Admin\Grid\Displayers\ProgressBar::class,
-            'radio'       => \Encore\Admin\Grid\Displayers\Radio::class,
-            'checkbox'    => \Encore\Admin\Grid\Displayers\Checkbox::class,
-            'orderable'   => \Encore\Admin\Grid\Displayers\Orderable::class,
+            'editable'    => \Core\Admin\Grid\Displayers\Editable::class,
+            'switch'      => \Core\Admin\Grid\Displayers\SwitchDisplay::class,
+            'switchGroup' => \Core\Admin\Grid\Displayers\SwitchGroup::class,
+            'select'      => \Core\Admin\Grid\Displayers\Select::class,
+            'image'       => \Core\Admin\Grid\Displayers\Image::class,
+            'label'       => \Core\Admin\Grid\Displayers\Label::class,
+            'button'      => \Core\Admin\Grid\Displayers\Button::class,
+            'link'        => \Core\Admin\Grid\Displayers\Link::class,
+            'badge'       => \Core\Admin\Grid\Displayers\Badge::class,
+            'progressBar' => \Core\Admin\Grid\Displayers\ProgressBar::class,
+            'radio'       => \Core\Admin\Grid\Displayers\Radio::class,
+            'checkbox'    => \Core\Admin\Grid\Displayers\Checkbox::class,
+            'orderable'   => \Core\Admin\Grid\Displayers\Orderable::class,
         ];
 
         foreach ($map as $abstract => $class) {
